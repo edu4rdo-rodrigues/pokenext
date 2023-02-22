@@ -38,8 +38,10 @@ export default function Home({ pokemons }) {
         />
       </div>      
       <div className={styles.pokemon_container}>
-        {pokemons.map((pokemon) => (
-          <Card pokemon={pokemon} />
+        {pokemons.map((pokemon, index) => (
+          
+            <Card pokemon={pokemon} index={index} key={index} />
+          
         ))}
       </div>
     </>

@@ -6,7 +6,7 @@ import styles from '../styles/Card.module.css'
 export default function Card({ pokemon }) {
 
   return (
-    <div className={styles.card} key={pokemon.id}>
+    <div className={styles.card}>
       <Image
         src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}   
         width="120"
